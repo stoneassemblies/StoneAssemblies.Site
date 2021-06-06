@@ -16,13 +16,13 @@ steps:
   inputs:
     command: 'install'
     
-- task: CmdLine@2
-  inputs:
-    script: 'git clone https://github.com/stoneassemblies/stoneassemblies.github.io.git public'
-    
 - task: Npm@1
   displayName: 'Build'
   inputs:
     command: 'custom'
     customCommand: 'run build'
 
+- task: CmdLine@2
+  inputs:
+    script: |
+      git clone https://github.com/stoneassemblies/stoneassemblies.github.io.git sync
