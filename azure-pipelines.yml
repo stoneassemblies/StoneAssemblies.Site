@@ -23,6 +23,17 @@ steps:
     customCommand: 'run build'
 
 - task: CmdLine@2
+  displayName: 'Update GitHub page'
   inputs:
     script: |
-      git clone https://github.com/stoneassemblies/stoneassemblies.github.io.git sync
+      git config --global user.email "alexander.fernandez.sauco@gmail.com"
+      git config --global user.name "Igr Alexánder Fernández Saúco"
+      git clone https://$GITHUB_TOKEN@github.com/stoneassemblies/stoneassemblies.github.io.git sync
+      cp -R public/* sync/
+      cd sync
+      git add -A 
+      git commit -a -m "Update web site "
+      git push origin
+      cd ..
+  env:
+    GITHUB_TOKEN: $(GITHUB_TOKEN)
