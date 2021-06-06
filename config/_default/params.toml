@@ -1,0 +1,58 @@
+# Meta Data for SEO
+
+## Homepage
+title = "Stone Assemblies"
+titleSeparator = "-"
+titleAddition = "Rock solid software & components"
+description = "Stone Assemblies is ....."
+
+## Open Graph + Twitter Cards
+images = ["stoneassemblies-logo.png"]
+twitterSite = "alexfdezsauco"
+twitterCreator = "alexfdezsauco"
+# facebookAuthor = ""
+# facebookPublisher = ""
+ogLocale = "en_US"
+
+## JSON-LD
+schemaType = "Organization"
+schemaLogo = "stoneassemblies-logo.png"
+schemaTwitter = "https://twitter.com/alexfdezsauco"
+# schemaLinkedIn = "https://www.linkedin.com/in/igr-alex%C3%A1nder-fern%C3%A1ndez-sa%C3%BAco-34374062/"
+schemaGitHub = "https://github.com/stoneassemblies"
+schemaSection = "blog"
+
+## Sitelinks Search Box
+siteLinksSearchBox = false
+
+## Chrome Browser
+themeColor = "#fff"
+
+# Images
+quality = 85
+bgColor = "#fff"
+landscapePhotoWidths = [900, 800, 700, 600, 500]
+portraitPhotoWidths = [800, 700, 600, 500]
+lqipWidth = "20x"
+
+# Footer
+# footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://getdoks.org/\">Doks</a>"
+
+# Alert
+# alert = false
+# alertText = "Like Doks? <a class=\"alert-link\" href=\"https://github.com/h-enk/doks/stargazers\">Star on GitHub</a>. Thanks!</a>"
+
+# Edit Page
+docsRepo = "https://github.com/stoneassemblies/StoneAssemblies.Site"
+editPage = false
+
+[options]
+  lazySizes = true
+  clipBoard = true
+  instantPage = true
+  flexSearch = true
+  darkMode = true
+  bootStrapJs = false
+  breadCrumb = false
+  highLight = true
+  kaTex = false
