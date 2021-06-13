@@ -3,8 +3,8 @@
 ## Homepage
 title = "Stone Assemblies"
 titleSeparator = "-"
-titleAddition = "Automate other business processes without neglecting your own"
-description = "Automate other business processes without neglecting your own"
+titleAddition = "Automate other business without neglecting your own"
+description = "Automate other business without neglecting your own"
 
 ## Open Graph + Twitter Cards
 images = ["stoneassemblies-logo.png"]
