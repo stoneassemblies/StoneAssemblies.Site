@@ -29,7 +29,7 @@ To setup the workspace, open a **PowerShell** console and run the following comm
 
 <script src="https://gist.github.com/alexfdezsauco/998e4f86c347c9b9d8da1cae9a2841bf.js"></script>
 
-A Visual Studio solution file StoneAssemblies.MassAuth.QuickStart.sln is created after commands, which includes the following projects:
+After executing theses commands, a Visual Studio solution file StoneAssemblies.MassAuth.QuickStart.sln is created, which includes the following projects:
 
 |                      Project                       |                             Description                              |
 | -------------------------------------------------- | -------------------------------------------------------------------- |
