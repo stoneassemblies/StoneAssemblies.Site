@@ -20,8 +20,7 @@ toc: true
 - [CakeBuild](https://cakebuild.net/) (1.1.0)
 - [Tye](https://github.com/dotnet/tye/blob/main/docs/getting_started.md) (0.9.0-alpha.21380.1)
 
-
-The complete and final source code of this **Hands-on Lab** is available on [GitHub](https://github.com/alexfdezsauco/StoneAssemblies.MassAuth.QuickStart). You can clone the repository or just follow the steps the we describe below.
+> The final source code of this Hands-on Lab is in the [StoneAssemblies.MassAuth.QuickStart](https://github.com/stoneassemblies/StoneAssemblies.MassAuth.QuickStart) repository available  on GitHub. You can directly clone this repository or just follow the steps outlined below.
 
 ## Step 1: Setup the workspace
 
