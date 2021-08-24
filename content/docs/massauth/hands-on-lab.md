@@ -20,6 +20,9 @@ toc: true
 - [CakeBuild](https://cakebuild.net/) (1.1.0)
 - [Tye](https://github.com/dotnet/tye/blob/main/docs/getting_started.md) (0.9.0-alpha.21380.1)
 
+
+The complete and final source code of this **Hands-on Lab** is available on [GitHub](https://github.com/alexfdezsauco/StoneAssemblies.MassAuth.QuickStart). You can clone the repository or just follow the steps we describe below.
+
 ## Step 1: Setup the workspace
 
 To setup the workspace, open a **PowerShell** console and run the following commands:
@@ -28,8 +31,8 @@ To setup the workspace, open a **PowerShell** console and run the following comm
 
 A Visual Studio solution file StoneAssemblies.MassAuth.QuickStart.sln is created after commands, which includes the following projects:
 
-|                    Project                     |                             Description                              |
-| ---------------------------------------------- | -------------------------------------------------------------------- |
+|                      Project                       |                             Description                              |
+| -------------------------------------------------- | -------------------------------------------------------------------- |
 | StoneAssemblies.MassAuth.QuickStart.**Messages**   | Class library for messages specification.                            |
 | StoneAssemblies.MassAuth.QuickStart.**Rules**      | Class library to implement rules for messages.                       |
 | StoneAssemblies.MassAuth.QuickStart.**Services**   | Web API to host the services that require to be authorized by rules. |
@@ -81,16 +84,58 @@ Again, to ensure the configuration via environment variables the *Program* file 
 
 In order to build and run the project, open a **PowerShell** terminal in the working directory and run following commands.
 
-<script src="https://gist.github.com/alexfdezsauco/86ae93d5d612700483e96d3b66655e6d.js"></script>
+```PowerShell
+> dotnet cake
+> cd deployment/tye
+> tye run
+```
 
 Open your browser and navigate to [http://localhost:8000](http://localhost:8000) to display the Tye user interface and ensure that everything is working. 
 
 
 Open a new **PowerShell** terminal and try the following commands: 
 
-**Valid request**
-<script src="https://gist.github.com/alexfdezsauco/9966d93bb853f9ac761127d7e262dd91.js"></script>
+**Input**: Valid request
 
-**Out of range request**
-<script src="https://gist.github.com/alexfdezsauco/08f5afd91c8216b87cef1ceff6b26aa4.js"></script>
+```PowerShell
+Invoke-WebRequest http://localhost:6001/WeatherForecast?StartDate=$([System.DateTime]::Now.AddDays(1).Date)
+```
+
+**Output:**
+```
+StatusCode        : 200
+StatusDescription : OK
+Content           : [{"date":"2021-08-24T00:00:00","temperatureC":21,"temperatureF":69,"summary":"Chilly"},{"date":"2021-08-25T00:00:00","temperatureC":4,"tem
+                    peratureF":39,"summary":"Chilly"},{"date":"2021-08-26T00:00:00...
+RawContent        : HTTP/1.1 200 OK
+                    Transfer-Encoding: chunked
+                    Content-Type: application/json; charset=utf-8
+                    Date: Sun, 22 Aug 2021 18:38:21 GMT
+                    Server: Kestrel
+
+                    [{"date":"2021-08-24T00:00:00","temperatureC":21,"te...
+Forms             : {}
+Headers           : {[Transfer-Encoding, chunked], [Content-Type, application/json; charset=utf-8], [Date, Sun, 22 Aug 2021 18:38:21 GMT], [Server, Kestrel]}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 435
+```
+
+**Input**: Out of range request
+
+```PowerShell
+Invoke-WebRequest http://localhost:6001/WeatherForecast?StartDate=$([System.DateTime]::Now.AddDays(11).Date)
+```
+
+**Output:**
+```
+Invoke-WebRequest : The remote server returned an error: (401) Unauthorized.
+At line:1 char:1
++ Invoke-WebRequest http://localhost:6001/WeatherForecast?StartDate=$([ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-WebRequest], WebException
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+```
 

@@ -17,7 +17,7 @@ ogLocale = "en_US"
 ## JSON-LD
 schemaType = "Organization"
 schemaLogo = "stoneassemblies-logo.png"
-schemaTwitter = "https://twitter.com/alexfdezsauco"
+schemaTwitter = "https://twitter.com/stoneassemblies"
 # schemaLinkedIn = "https://www.linkedin.com/in/igr-alex%C3%A1nder-fern%C3%A1ndez-sa%C3%BAco-34374062/"
 schemaGitHub = "https://github.com/stoneassemblies"
 schemaSection = "blog"
