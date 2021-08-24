@@ -21,7 +21,7 @@ toc: true
 - [Tye](https://github.com/dotnet/tye/blob/main/docs/getting_started.md) (0.9.0-alpha.21380.1)
 
 
-The complete and final source code of this **Hands-on Lab** is available on [GitHub](https://github.com/alexfdezsauco/StoneAssemblies.MassAuth.QuickStart). You can clone the repository or just follow the steps we describe below.
+The complete and final source code of this **Hands-on Lab** is available on [GitHub](https://github.com/alexfdezsauco/StoneAssemblies.MassAuth.QuickStart). You can clone the repository or just follow the steps the we describe below.
 
 ## Step 1: Setup the workspace
 
