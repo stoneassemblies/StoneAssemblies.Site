@@ -73,7 +73,11 @@ Basically, we add *AuthorizeByRuleFilter* as scoped service and ensure the commu
 
 ## Step 5: Hosting rules
 
-In order to host rules, we provide a production ready of *StoneAssemblies.MassAuth.Server* as docker image available in [DockerHub](https://hub.docker.com/r/stoneassemblies/massauth-server). But for debugging or even for customization purpose could be useful build your own rule host server. So, in the **AuthServer** project we also have to update the *Startup* class implementation.
+The **AuthServer** project is responsible for hosting the rules. The rules assemblies are loaded as plugins via [StoneAssemblies.Extensibility]({{< relref "/docs/extensibility/what-is" >}}). Since the extensibility system is NuGet based, rules and messages must be provisioned as NuGet packages. 
+
+> There is a production ready [StoneAssemblies.MassAuth.Server](https://hub.docker.com/r/stoneassemblies/massauth-server) docker image available in [DockerHub](https://hub.docker.com).
+
+For debugging or even for customization purpose could be useful build your own rule host server project and the *Startup* class implementation must be updated to initialize the extensibility system and load rules.
 
 <script src="https://gist.github.com/alexfdezsauco/6384b11ed441d6efb06950e5e6babdc9.js"></script>
 

@@ -1,6 +1,5 @@
 ---
 title: "What is MassAuth?"
-
 description: "MassAuth Introduction."
 lead: ""
 date: 2021-08-23T23:39:00-04:00:00
@@ -20,5 +19,8 @@ toc: true
 The main goal of the [gatekeeper pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/gatekeeper) is about to 
 
 > _"Protect applications and services by using a dedicated host instance that acts as a broker between clients and the application or service, validates and sanitizes requests, and passes requests and data between them. This can provide an additional layer of security, and limit the attack surface of the system."_
+
+## Background and context
+
 
 
