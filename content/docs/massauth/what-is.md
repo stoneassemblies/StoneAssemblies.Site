@@ -14,6 +14,8 @@ weight: 110
 toc: true
 ---
 
+> Enjoy authorizing with pleasure and endless possibilities.
+
 **StoneAssemblies.MassAuth** is a free, open source distributed, extensible message-based authorization framework built on top of [MassTransit](https://masstransit-project.com/). It is a gatekeeper pattern implementation, which also allows you to improve the responsiveness and throughput of your system, from a loosely coupled and a message-driven approach. 
 
 The main goal of the [gatekeeper pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/gatekeeper) is about to 

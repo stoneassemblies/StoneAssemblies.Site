@@ -1,7 +1,7 @@
 ---
 title: "What is StoneAssemblies?"
 description: "Introduction to StoneAssemblies."
-lead: "Automate other business without neglecting your own"
+lead: ""
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00
 draft: false
@@ -12,6 +12,7 @@ menu:
 weight: 120
 toc: true
 ---
+> Automate other business without neglecting your own
 
 StoneAssemblies is a development and consulting group. If you are running a software business or starting a new one, you probably need us.
 

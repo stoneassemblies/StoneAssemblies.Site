@@ -1,7 +1,7 @@
 ---
 title: "Hands-on Lab"
 description: "MassAuth Hands-on Lab."
-lead: "Straight forward Hands-on Lab for StoneAssemblies.MassAuth"
+lead: ""
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00
 draft: false
@@ -12,6 +12,8 @@ menu:
 weight: 112
 toc: true
 ---
+
+> Straight forward Hands-on Lab for StoneAssemblies.MassAuth
 
 ## Prerequisites
 
