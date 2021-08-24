@@ -40,6 +40,8 @@ A Visual Studio solution file StoneAssemblies.MassAuth.QuickStart.sln is created
 
 The commands also add the required NuGet packages and project references.
 
+The workspace also include two more aditional files. The `build.cake`, a cake based build script to ensure the required output and location and the `deployment\tye\tye.yaml` that will help us to run and debug the solution.
+
 ## Step 2: Contract first
 
 Let's add a bit of complexity to the generated problem, related with weather forecast. For instance, let's say we will allow to request forecast from a certain date, as some forecasts may not be available due to the complexity of the calculations.
