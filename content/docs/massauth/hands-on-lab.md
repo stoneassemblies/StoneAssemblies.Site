@@ -66,7 +66,7 @@ We also have to update the *Startup* class implementation.
 
 <script src="https://gist.github.com/alexfdezsauco/86b681686642537c8d945149031a2302.js"></script>
 
-Basically, we add *AuthorizeByRuleFilter* as scoped service and ensure the communication through the message broker. Remember, StoneAssemblies.MassAuth is built on top of MassTransit.  Finally, to ensure the configuration via environment variables we must update the *Program* class to this. 
+Basically, we add *AuthorizeByRuleFilter* as scoped service and ensure the communication through the message broker. Remember, StoneAssemblies.MassAuth is built on top of [MassTransit](https://masstransit-project.com/).  Finally, to ensure the configuration via environment variables we must update the *Program* class to this. 
 
 <script src="https://gist.github.com/alexfdezsauco/2d6e33f15ee7077577727498a387e8c3.js"></script>
 
