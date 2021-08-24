@@ -1,8 +1,29 @@
-# [[docs]]
-#  name = "Prologue"
-#  weight = 10
-#  identifier = "prologue"
-#  url = "/docs/prologue/"
+# [[main]]
+# name = "News"
+# url = "/news/"
+# weight = 20
+
+# [[main]]
+# name = "Blog"
+# url = "/blog/"
+# weight = 20
+
+[[main]]
+name = "Documentation"
+url = "/docs/stoneassemblies/introduction/"
+weight = 20
+
+[[docs]]
+name = "stoneassemblies"
+weight = 10
+identifier = "stoneassemblies"
+url = "/docs/stoneassemblies/"
+
+[[docs]]
+name = "massauth"
+weight = 11
+identifier = "massauth"
+url = "/docs/massauth/"
 
 # [[docs]]
 #  name = "Help"
