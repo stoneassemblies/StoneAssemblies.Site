@@ -69,7 +69,7 @@ We also have to update the *Startup* class implementation.
 
 <script src="https://gist.github.com/alexfdezsauco/86b681686642537c8d945149031a2302.js"></script>
 
-Basically, we add *AuthorizeByRuleFilter* as scoped service and ensure the communication through the message broker. Remember, StoneAssemblies.MassAuth is built on top of [MassTransit](https://masstransit-project.com/).  Finally, to ensure the configuration via environment variables we must update the *Program* class to this. 
+Basically, the *AddMassAuth* service collection extension method is called to register the library services and also ensure the communication through the message broker. Remember, StoneAssemblies.MassAuth is built on top of [MassTransit](https://masstransit-project.com/).  Finally, to read the configuration fro environment variables we must update the *Program* class to this. 
 
 <script src="https://gist.github.com/alexfdezsauco/2d6e33f15ee7077577727498a387e8c3.js"></script>
 
@@ -83,7 +83,7 @@ For debugging or even for customization purpose could be useful build your own r
 
 <script src="https://gist.github.com/alexfdezsauco/6384b11ed441d6efb06950e5e6babdc9.js"></script>
 
-Again, to ensure the configuration via environment variables the *Program* file must be updated like this.
+Again, to read the configuration from the environment variables the *Program* file must be updated like this.
 
 <script src="https://gist.github.com/alexfdezsauco/9cd40c62c6efba8fc164d73dafe3b117.js"></script>
 
@@ -102,7 +102,7 @@ Open your browser and navigate to [http://localhost:8000](http://localhost:8000)
 
 Open a new **PowerShell** terminal and try the following commands: 
 
-**Input**: Valid request
+A) **Input**: Valid request
 
 ```PowerShell
 Invoke-WebRequest http://localhost:6001/WeatherForecast?StartDate=$([System.DateTime]::Now.AddDays(1).Date)
@@ -130,7 +130,7 @@ ParsedHtml        : mshtml.HTMLDocumentClass
 RawContentLength  : 435
 ```
 
-**Input**: Out of range request
+B) **Input**: Out of range request
 
 ```PowerShell
 Invoke-WebRequest http://localhost:6001/WeatherForecast?StartDate=$([System.DateTime]::Now.AddDays(11).Date)
