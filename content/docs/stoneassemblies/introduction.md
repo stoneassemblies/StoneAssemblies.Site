@@ -12,7 +12,7 @@ menu:
 weight: 120
 toc: true
 ---
-> Automate other business without neglecting your own
+> Assembly of Solutions and Technologies Oriented to the Need for Effectiveness
 
 StoneAssemblies is a development and consulting group. If you are running a software business or starting a new one, you probably need us.
 
