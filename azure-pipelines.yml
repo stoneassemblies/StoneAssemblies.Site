@@ -11,6 +11,11 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+ - task: NodeTool@0
+    displayName: 'Set Node.js version to 16.x'
+    inputs:
+      versionSpec: '16.x'
+
 - task: Npm@1
   displayName: 'Install packages'
   inputs:
