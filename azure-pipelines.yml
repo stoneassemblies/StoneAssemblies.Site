@@ -38,7 +38,7 @@ steps:
       cd sync
       git add -A 
       git commit -a -m "Update web site "
-      git push origin
+      git push https://$GITHUB_TOKEN@github.com/stoneassemblies/stoneassemblies.github.io.git origin
       cd ..
   env:
     GITHUB_TOKEN: $(GITHUB_TOKEN)
